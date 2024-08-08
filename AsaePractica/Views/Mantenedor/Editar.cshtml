@@ -1,0 +1,36 @@
+﻿@model VentaModel
+@{
+    ViewData["Title"] = "Editar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card">
+    <div class="card-header">
+        Editar Venta
+    </div>
+    <div class="card-body">
+        <form asp-action="Editar" asp-controller="Mantenedor" method="post">
+            <input asp-for="IdVenta" type="hidden" class="form-control">
+            <div class="mb-3">
+                <label class="form-label">IdProducto</label>
+                <input asp-for="IdProducto" type="text" class="form-control">
+                <span asp-validation-for="IdProducto" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Cantidad</label>
+                <input asp-for="Cantidad" type="text" class="form-control">
+                <span asp-validation-for="Cantidad" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Precio</label>
+                <input asp-for="IdTipoPrecio" type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Unitario</label>
+                <input asp-for="Precio" type="text" class="form-control" value="0">
+                <span asp-validation-for="Precio" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Guardar</button> <a asp-action="Listar" asp-controller="Mantenedor" class="btn btn-info">Volver a la Lista</a>
+        </form>
+    </div>
+</div>

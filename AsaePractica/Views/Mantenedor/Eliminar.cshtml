@@ -1,0 +1,23 @@
+﻿@model VentaModel
+@{
+    ViewData["Title"] = "Eliminar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card">
+    <div class="card-header">
+        Editar Venta
+    </div>
+    <div class="card-body">
+        <form asp-action="Eliminar" asp-controller="Mantenedor" method="post">
+            <input asp-for="IdVenta" type="hidden" class="form-control">
+
+            <div class="alert alert-danger" role="alert">
+                Realmente desea eliminar la venta del : @Html.DisplayTextFor(m=>m.Producto) ?
+            </div>
+
+            <button type="submit" class="btn btn-danger">Eliminar</button>
+            <a asp-action="Listar" asp-controller="Mantenedor" class="btn btn-warning">Volver a la Lista</a>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiRest_Asae", "ApiRest_Asae\ApiRest_Asae.csproj", "{EE240017-C626-4F69-8105-C5E56DBF6333}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE240017-C626-4F69-8105-C5E56DBF6333}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE240017-C626-4F69-8105-C5E56DBF6333}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE240017-C626-4F69-8105-C5E56DBF6333}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE240017-C626-4F69-8105-C5E56DBF6333}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {501E809D-4C90-4BBF-A440-82DBDF2E6768}
+	EndGlobalSection
+EndGlobal
